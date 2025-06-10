@@ -1,0 +1,63 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app-container {
+   min-height: 100vh;
+  width: 100%;
+  background-image: url('/fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* <- FIXA o fundo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.message-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.casal-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.titulo {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mensagem {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.botao-play {
+  background-color: #ff6b81;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: 0.3s ease;
+}
+
+.botao-play:hover {
+  background-color: #ff4757;
+} 
+
