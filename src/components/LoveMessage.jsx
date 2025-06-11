@@ -21,10 +21,10 @@ const LoveMessage = () => {
       <audio ref={audioRef} src="/musica.mp3" loop />
 
       {!playing && (
-        <button className="botao-play" onClick={handlePlay}>
-          ❤️ Clique para ouvir
-        </button>
-      )}
+  <button className="botao-play-fixed" onClick={handlePlay}>
+    ❤️ Clique para ouvir ❤️
+  </button>
+)}
 
       <img src="/casal.jpg" alt="Casal" className="casal-img" />
 
@@ -40,10 +40,10 @@ const LoveMessage = () => {
          <p></p>
          Viver a vida com voce é sem dúvida a coisa mais prazerosa que existe, amo partilhar a vida com voce e obrigado por 
          me fazer parte da sua.<br />
-         
+          <p></p>
 
         <br />
-        Biro, te amo do tamanho do seu estresse ❤️
+        te amo do tamanho do seu estresse ❤️
        <br />
      
         <p>&nbsp;</p>

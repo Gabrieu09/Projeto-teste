@@ -45,17 +45,23 @@ body, html, #root {
   font-size: 1.2rem;
   line-height: 1.6;
 }
-.botao-play {
+.botao-play-fixed {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #ff6b81;
   border: none;
-  padding: 0.8rem 1.2rem;
-  border-radius: 10px;
+  padding: 1rem 2rem;
+  border-radius: 999px;
   font-size: 1rem;
   color: white;
   cursor: pointer;
-  margin-bottom: 1rem;
-  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background 0.3s ease;
 }
+
 
 .botao-play:hover {
   background-color: #ff4757;
