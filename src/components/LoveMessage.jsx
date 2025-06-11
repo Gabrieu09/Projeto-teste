@@ -31,17 +31,20 @@ const LoveMessage = () => {
       <h1 className="titulo">Para o amor da minha vida</h1>
 
       <p className="mensagem">
-        Cada dia contigo é um capítulo de amor na história da minha vida. <br />
-        Você é o meu porto seguro, minha alegria e minha inspiração. <br />
-        Te amo com todo meu coração ❤️
-        s
-        
+        Nunca fui bom com palavras, voce sabe disso, mas hoje quero tentar expressar o que sinto por você. <br />
+        <p></p>
+        Amo investir cada segundo do meu tempo com você, voce é o motivo da minha alegria e dos cabelos brancos kkkk<br />     
+        Você é a minha melhor amiga, minha parceira, minha companheira de todas as horas. <br />
+        Quanto mais eu mostro que sou independente, gosto de fazer as coisas sozinho, mais voce me mostra que é a minha parceira,
+         e que sempre estara ao meu lado me apoiando. <br />
+         <p></p>
+         Viver a vida com voce é sem dúvida a coisa mais prazerosa que existe, amo partilhar a vida com voce e obrigado por 
+         me fazer parte da sua.<br />
+         
 
-        a
-
-
-
-        a
+        <br />
+        Biro, te amo do tamanho do seu estresse ❤️
+       <br />
       </p>
     </motion.div>
   );
