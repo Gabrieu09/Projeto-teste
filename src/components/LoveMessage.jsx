@@ -31,7 +31,7 @@ const LoveMessage = () => {
       <h1 className="titulo">Para o amor da minha vida</h1>
 
       <p className="mensagem">
-        Nunca fui bom com palavras, voce sabe disso, mas hoje quero tentar expressar o que sinto por você. <br />
+        Nunca fui bom com palavras, voce sabe disso, mas hoje quero tentar expressar um pouco do que sinto por você. <br />
         <p></p>
         Amo investir cada segundo do meu tempo com você, voce é o motivo da minha alegria e dos cabelos brancos kkkk<br />     
         Você é a minha melhor amiga, minha parceira, minha companheira de todas as horas. <br />
@@ -45,6 +45,21 @@ const LoveMessage = () => {
         <br />
         Biro, te amo do tamanho do seu estresse ❤️
        <br />
+     
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
       </p>
     </motion.div>
   );
