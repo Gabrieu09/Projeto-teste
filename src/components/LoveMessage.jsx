@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "../styles/App.css";
 
@@ -6,10 +6,36 @@ const LoveMessage = () => {
   const audioRef = useRef(null);
   const [playing, setPlaying] = useState(false);
 
+  const startTime = 21; // segundos
+  const endTime = 180;   // segundos
+
   const handlePlay = () => {
-    audioRef.current.play();
+    const audio = audioRef.current;
+    audio.currentTime = startTime;
+    audio.play();
     setPlaying(true);
   };
+
+  useEffect(() => {
+    const audio = audioRef.current;
+
+    const handleTimeUpdate = () => {
+      if (audio.currentTime >= endTime) {
+        audio.currentTime = startTime;
+        audio.play();
+      }
+    };
+
+    if (audio) {
+      audio.addEventListener("timeupdate", handleTimeUpdate);
+    }
+
+    return () => {
+      if (audio) {
+        audio.removeEventListener("timeupdate", handleTimeUpdate);
+      }
+    };
+  }, []);
 
   return (
     <motion.div
@@ -18,7 +44,7 @@ const LoveMessage = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
     >
-      <audio ref={audioRef} src="/musica.mp3" loop />
+      <audio ref={audioRef} src="/musica.mp3" />
 
       {!playing && (
   <button className="botao-play-fixed" onClick={handlePlay}>
@@ -35,7 +61,7 @@ const LoveMessage = () => {
         <p></p>
         Amo investir cada segundo do meu tempo com você, voce é o motivo da minha alegria e dos cabelos brancos kkkk<br />     
         Você é a minha melhor amiga, minha parceira, minha companheira de todas as horas. <br />
-        Quanto mais eu mostro que sou independente, gosto de fazer as coisas sozinho, mais voce me mostra que é a minha parceira,
+        Quanto mais me mostro, marrento, independente, gosto de fazer as coisas sozinho, mais voce me mostra que é a minha parceira,
          e que sempre estara ao meu lado me apoiando. <br />
          <p></p>
          Viver a vida com voce é sem dúvida a coisa mais prazerosa que existe, amo partilhar a vida com voce e obrigado por 
