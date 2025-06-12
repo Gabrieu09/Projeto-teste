@@ -59,7 +59,7 @@ const LoveMessage = () => {
       <p className="mensagem">
         Nunca fui bom com palavras, voce sabe disso, mas hoje quero tentar expressar um pouco do que sinto por você. <br />
         <p></p>
-        Amo investir cada segundo do meu tempo com você, voce é o motivo da minha alegria e dos cabelos brancos kkkk<br />     
+        Amo investir cada segundo do meu tempo com você, voce é o motivo da minha alegria e dos cabelos brancos<br />     
         Você é a minha melhor amiga, minha parceira, minha companheira de todas as horas. <br />
         Quanto mais me mostro, marrento, independente, gosto de fazer as coisas sozinho, mais voce me mostra que é a minha parceira,
          e que sempre estara ao meu lado me apoiando. <br />
